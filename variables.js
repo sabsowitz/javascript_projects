@@ -15,3 +15,14 @@ function sum2(x) {
   return x.reduce(function(a, b) { return a + b; })
 }
 console.log("sum2 = " + sum2(x));
+
+x = getValue();
+for (;;) {
+  answer = promptUser(); // blocking call
+  if (answer == 'Quit') {
+    exit;
+  }
+  else {
+    // do something interesting with their answer.
+  }
+}
