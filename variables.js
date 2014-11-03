@@ -15,3 +15,5 @@ function sum2(x) {
   return x.reduce(function(a, b) { return a + b; })
 }
 console.log("sum2 = " + sum2(x));
+
+
