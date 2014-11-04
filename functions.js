@@ -14,6 +14,8 @@ var plus5 = function(num) {
 // call function
 var x = plus5(3); // x = 8
 
+// ------------------------------------------------------------
+
 // Why is this cool?
 function flatTax(salary) {
   return salary * 0.12; // 12% flat tax
@@ -31,6 +33,8 @@ function progressiveTax(salary) {
 var taxReform = getTaxReform(); // true or false
 var taxFunction = taxReform ? flatTax : progressiveTax;
 console.log("Tax on 60000 = " + taxFunction(60000));
+
+// ---------------------------------------------------------
 
 //    Functions as 1st Class Citizens
 //    In CS, a programming is said to have first-class functions
@@ -63,7 +67,7 @@ function() {
 // -stored in a variable inside an object
 // -passed around as application data (callback or handler)
 
-
+// -----------------------------------------------------------
 
 // SCOPE (gives complete control over variables)
 
@@ -88,6 +92,8 @@ function add(x, y)  {
   var sum = x + y; // var sum gets hoisted 
   return sum;
 }
+
+// ------------------------------------------------------------
 
 // Four Patterns of Function Invocation
 // -We must invoke a function to run it (i.e. call the function)
@@ -129,11 +135,17 @@ function Deathstar() {
 var deathstar = new Deathstar();
 // this === shiny new Deathstar instance
 
+
+// -------------------------------------------------------------
+
+
 // Apply vs. Call
 // .call and .apply are special methods in JS to apply to functions.
 // call: pass in either a comma seperated list of arguments or give it
 // an [args] array that contains all the arguments.
 // apply: only takes an [arg] array containing the argument.
+
+// ------------------------------------------------------------
 
 // Underscore Functions
 // One of the most popular JS libraries of all time!
@@ -144,9 +156,12 @@ var deathstar = new Deathstar();
 // Also see: lodash (has some extra features that Underscore doesn't have)
 // http://www.underscorejs.org/
 
-//Examples:
+// Examples:
 _.map([1, 2, 3, 4, 5], function(num)
   { return num * 3; });
 
 var sum = _.reduce([1, 2, 3, 4, 5],
   function(memo, num) { return memo + num; }, 0);
+
+var product = _.reduce([1, 2, 3, 4, 5],
+  function(memo, num) { return acc * num; }, 1);
