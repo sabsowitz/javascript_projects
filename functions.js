@@ -35,10 +35,11 @@ console.log("Tax on 60000 = " + taxFunction(60000));
 // Functions as 1st Class Citizens
 // In CS, a programming is said to have first-class functions
 // if it treats functions as "first-class citizens."
-
 // This means:
 // -Assigning functions to variables.
 // -Storing functions within data structures.
+// -Passing functions as arguments to other functions.
+// -Returning functions as the value from other functions.
 
 function getTaxFormula(getTaxReform) {
   return getTaxReform() ? flatTax : progressiveTax;
