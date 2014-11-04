@@ -168,11 +168,29 @@ var product = _.reduce([1, 2, 3, 4, 5],
 
 // Using Underscore with NodeJS
 
-$ mkdir example1
-$ cd example1
-$ npm install underscore
-$ touch ex1.js
-// contents of ex1.js:
+// $ mkdir example1
+// $ cd example1
+// $ npm install underscore
+// $ touch ex1.js
+// // contents of ex1.js:
+ _ = require("./node_modules/underscore/underscore-min.js")
+ _.each([1, 2, 3], function(n) { console.log(n); });
+// $ node ex1.js
+
+// Using Underscore with objects
+
 _ = require("./node_modules/underscore/underscore-min.js")
-_.each([1, 2, 3], function(n) { console.log(n); });
-$ node ex1.js
+function findFastest(animals) {
+  return _.max(animals, function(animal) {
+    return parseInt(animal.topSpeed);
+  });
+};
+
+var list = [
+  { name: "Cheetah", topSpeed: "75" },
+  { name: "Peregrine Falcon", topSpeed: "242" }
+  { name: "Horse", topSpeed: "44" }
+];
+
+console.log("The fastest animal is" +
+            JSON.strigify(findFastest(list)));
