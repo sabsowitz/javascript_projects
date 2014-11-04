@@ -128,3 +128,11 @@ function Deathstar() {
 
 var deathstar = new Deathstar();
 // this === shiny new Deathstar instance
+
+// Apply vs. Call
+// .call and .apply are special methods in JS to apply to functions.
+// call: pass in either a comma seperated list of arguments or give it
+// an [args] array that contains all the arguments.
+// apply: only takes an [arg] array containing the argument.
+
+// Underscore Functions
