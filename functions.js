@@ -89,3 +89,33 @@ function add(x, y)  {
   var sum = x + y; // var sum gets hoisted 
   return sum;
 }
+
+// Four Patterns of Function Invocation
+// -We must invoke a function to run it (i.e. call the function)
+// -Amazingly, there are 4 ways to invoke a function in JS.
+// -This makes JS both amazingly flexible and absolutey insane!
+//
+function goBoom() {
+  console.log(this);
+}
+
+goBoom();
+// this === window
+
+//Method Invocation Pattern
+var deathstar = {
+  goBoom: function() {
+    console.log(this);
+  }
+};
+deathstar.goBoom();
+// this === deathstar
+
+//Call/Apply Invocation Pattern
+function goBoom(){
+  console.log(this);
+}
+
+var deathstar() = {};
+goBoom.call(deathstar);
+// this === deathstar
