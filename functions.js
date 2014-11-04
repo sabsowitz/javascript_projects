@@ -111,7 +111,7 @@ var deathstar = {
 deathstar.goBoom();
 // this === deathstar
 
-//Call/Apply Invocation Pattern
+// Call / Apply Invocation Pattern
 function goBoom(){
   console.log(this);
 }
