@@ -31,3 +31,11 @@ function progressiveTax(salary) {
 var taxReform = getTaxReform(); // true or false
 var taxFunction = taxReform ? flatTax : progressiveTax;
 console.log("Tax on 60000 = " + taxFunction(60000));
+
+// Functions as 1st Class Citizens
+// In CS, a programming is said to have first-class functions
+// if it treats functions as "first-class citizens."
+
+// This means:
+// -Assigning functions to variables.
+// -Storing functions within data structures.
