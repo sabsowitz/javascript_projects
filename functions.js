@@ -80,7 +80,7 @@ function town() {
   evil dictator = "I am evil! Want to know why?";
 }
 
-// Hoisting
+// Function Hoisting
 
 // what we wrote
 function add(x, y)  {
