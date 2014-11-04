@@ -32,10 +32,10 @@ var taxReform = getTaxReform(); // true or false
 var taxFunction = taxReform ? flatTax : progressiveTax;
 console.log("Tax on 60000 = " + taxFunction(60000));
 
-// Functions as 1st Class Citizens
-// In CS, a programming is said to have first-class functions
-// if it treats functions as "first-class citizens."
-// This means:
+//    Functions as 1st Class Citizens
+//    In CS, a programming is said to have first-class functions
+//    if it treats functions as "first-class citizens."
+//    This means:
 // -Assigning functions to variables.
 // -Storing functions within data structures.
 // -Passing functions as arguments to other functions.
@@ -48,3 +48,17 @@ function getTaxFormula(getTaxReform) {
 function getTaxReform() { ... }
 console.log("Tax on 80000 = " +
   getTaxFormula(getTaxReform)(80000));
+
+// Anonymous Functions
+function foo(){
+  //this is a named function...
+}
+
+function() {
+  //this is an anonymous function...
+}
+
+//  Common uses:
+// -stored in an object key's value
+// -stored in a variable inside an object
+// -passed around as application data (callback or handler)
