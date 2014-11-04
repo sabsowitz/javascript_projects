@@ -9,6 +9,4 @@ function sum(array){
   }
   console.log(sum);
 }
-
-
 sum(weird);
