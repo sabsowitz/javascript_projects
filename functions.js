@@ -165,3 +165,14 @@ var sum = _.reduce([1, 2, 3, 4, 5],
 
 var product = _.reduce([1, 2, 3, 4, 5],
   function(memo, num) { return acc * num; }, 1);
+
+// Using Underscore with NodeJS
+
+$ mkdir example1
+$ cd example1
+$ npm install underscore
+$ touch ex1.js
+// contents of ex1.js:
+_ = require("./node_modules/underscore/underscore-min.js")
+_.each([1, 2, 3], function(n) { console.log(n); });
+$ node ex1.js
