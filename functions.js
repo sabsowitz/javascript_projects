@@ -39,3 +39,11 @@ console.log("Tax on 60000 = " + taxFunction(60000));
 // This means:
 // -Assigning functions to variables.
 // -Storing functions within data structures.
+
+function getTaxFormula(getTaxReform) {
+  return getTaxReform() ? flatTax : progressiveTax;
+}
+
+function getTaxReform() { ... }
+console.log("Tax on 80000 = " +
+  getTaxFormula(getTaxReform)(80000));
