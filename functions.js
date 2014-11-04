@@ -141,3 +141,12 @@ var deathstar = new Deathstar();
 // Written in the functional style
 // Does not extend any built-in objects
 // Examples: map, reduce, filter, invoke
+// Also see: lodash (has some extra features that Underscore doesn't have)
+// http://www.underscorejs.org/
+
+//Examples:
+_.map([1, 2, 3, 4, 5], function(num)
+  { return num * 3; });
+
+var sum = _.reduce([1, 2, 3, 4, 5],
+  function(memo, num) { return memo + num; }, 0);
