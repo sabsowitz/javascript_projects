@@ -81,7 +81,6 @@ function town() {
 }
 
 // Function Hoisting
-
 // what we wrote
 function add(x, y)  {
   x = x || 0;
@@ -113,11 +112,19 @@ deathstar.goBoom();
 
 // Call / Apply Invocation Pattern
 function goBoom(){
+  console.log("You blew up" + deathstar.name);
+}
+
+var deathstar() = { name: "deathstar" };
+goBoom.call(deathstar);
+// this === deathstar
+var falcon = { name: "millenium falcon" };
+goBoom.call(falcon); //this === falcon
+
+// Constructor Invocation Pattern
+function Deathstar() {
   console.log(this);
 }
 
-var deathstar() = {};
-goBoom.call(deathstar);
-// this === deathstar
-var falcon = {};
-goBoom.call(falcon); //this === falcon
+var deathstar = new Deathstar();
+// this === shiny new Deathstar instance
