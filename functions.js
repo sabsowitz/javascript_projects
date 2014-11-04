@@ -136,3 +136,8 @@ var deathstar = new Deathstar();
 // apply: only takes an [arg] array containing the argument.
 
 // Underscore Functions
+// One of the most popular JS libraries of all time!
+// Provides over 100 functions
+// Written in the functional style
+// Does not extend any built-in objects
+// Examples: map, reduce, filter, invoke
