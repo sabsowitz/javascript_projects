@@ -62,3 +62,30 @@ function() {
 // -stored in an object key's value
 // -stored in a variable inside an object
 // -passed around as application data (callback or handler)
+
+
+
+// SCOPE (gives complete control over variables)
+
+var president = "Everybody knows me. Globally!";
+
+function town() {
+  var mayor = "I'm unknown outside of my township.";
+
+  function homebody = "No one knows me. " +
+    "I don't leave home. " +
+    "but I know the mayor and the president.";
+  }
+
+  evil dictator = "I am evil! Want to know why?";
+}
+
+// Hoisting
+
+// what we wrote
+function add(x, y)  {
+  x = x || 0;
+  y = y || 0;
+  var sum = x + y; // var sum gets hoisted 
+  return sum;
+}
