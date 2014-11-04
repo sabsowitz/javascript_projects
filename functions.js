@@ -119,3 +119,5 @@ function goBoom(){
 var deathstar() = {};
 goBoom.call(deathstar);
 // this === deathstar
+var falcon = {};
+goBoom.call(falcon); //this === falcon
