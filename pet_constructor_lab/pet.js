@@ -7,8 +7,14 @@ function Pet(petName, ownerName, petAge, petSpecies) {
 }
 
 Pet.prototype.toString = function() {
-  return this.petName + ' is ' + this.ownerName + '\'s ' + this.petAge + ' years old ' + this.petSpecies + '.';
+  return this.petName + ' is ' + this.ownerName + '\'s ' + this.petAge + ' year old ' + this.petSpecies + '.';
 };
 
 var snoopy = new Pet('Snoopy', 'Susan', 3, 'dog');
 console.log(snoopy.toString());
+
+var daisy = new Pet('Daisy', 'Stephen', 4, 'dog');
+console.log(daisy.toString());
+
+var samson = new Pet('Samson', 'Stephen', 6, 'dog');
+console.log(samson.toString());
