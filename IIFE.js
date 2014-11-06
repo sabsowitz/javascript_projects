@@ -33,4 +33,21 @@ var adder = function(a) {
 };
 adder(3)(5);
 
+// Object Literals \\
+var samson = {
+  name: "Samson",
+  speak: function() { return this.name + " says woof."; }
+};
+// Object Constructors
+// Dog Constructor
+function Dog(name) {
+  this.name = name;
+  this.speak = function() { return this.name + " says woof."; };
+}
+//Create some dogs
+var samson = new Dog("Samson");
+var daisy = new Dog("Daisy");
+// Make them speak
+console.log(samson.speak()); // samson says woof
+console.log(daisy.speak()); // daisy says woof
 
