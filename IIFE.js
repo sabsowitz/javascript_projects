@@ -45,9 +45,9 @@ function Dog(name) {
   this.speak = function() { return this.name + " says woof."; };
 }
 //Create some dogs
-var samson = new Dog("Samson");
-var daisy = new Dog("Daisy");
+var Samson = new Dog("Samson");
+var Daisy = new Dog("Daisy");
 // Make them speak
-console.log(samson.speak()); // samson says woof
-console.log(daisy.speak()); // daisy says woof
+console.log(Samson.speak()); // samson says woof
+console.log(Daisy.speak()); // daisy says woof
 
