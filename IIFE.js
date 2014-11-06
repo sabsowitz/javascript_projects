@@ -38,7 +38,10 @@ var samson = {
   name: "Samson",
   speak: function() { return this.name + " says woof."; }
 };
+
+
 // Object Constructors
+
 // Dog Constructor
 function Dog(name) {
   this.name = name;
@@ -51,3 +54,8 @@ var saisy = new Dog("Daisy");
 console.log(samson.speak()); // samson says woof
 console.log(daisy.speak()); // daisy says woof
 
+// Prototypal Inheritance
+// JS, being a loosely typed language, never casts. The lineage of an object doesn't matter.
+// What matters about an object is what it can do, not what it is descended from.
+// In classical languages, objects are instances of classes, and a class can inherit from another class.
+// JS is a prototypal language, which means that objects inherit directly from other objects.
