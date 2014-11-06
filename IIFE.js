@@ -1,4 +1,4 @@
-// Immediately Invoked Function Expression
+// Immediately Invoked Function Expression //
 var counter = (function() { // The variable is set to the function.
   var i = 0;
   return { // Beginning of the closure 
@@ -16,8 +16,13 @@ counter.increment();  // => 101
 counter.increment();  // => 102
 counter.get()         // => 102
 
-// Garbage collection (Managing memory) 
-// Stack and Heap
-// Heap memory. Large pool of memory. 
+// Closures //
+var sum = function(a, b) { return a + b; };
+console.log(sum(2, 3));
+
+var adder = function(a) {
+  return function(b) { return a + b; };
+};
+adder(3)(5)
 
 
