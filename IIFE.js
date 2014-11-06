@@ -10,10 +10,14 @@ var counter = (function() { // The variable is set to the function.
   };
 }());
 
-counter.get();
-counter.set(3);
-counter.increment();
-counter.increment();
+counter.set(100);
+counter.get();        // => 100
+counter.increment();  // => 101
+counter.increment();  // => 102
+counter.get()         // => 102
 
-// Garbage collection --> manually manage all memory. Stack heap.
+// Garbage collection (Managing memory) 
+// Stack and Heap
+// Heap memory. Large pool of memory. 
+
 
